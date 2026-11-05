@@ -1,1 +1,17 @@
+a) O operador ternário possui a sintaxe <condição> ? <expressão_verdadeiro> : <expressão_falso>.
+1. A condição (media >= 7.0) é testada.
+2. Se media for maior ou igual a 7.0, o operador avalia para o caractere 'A'.
+3. Caso contrário, avalia para o caractere 'R'.
+Para media = 6.8, a condição 6.8 >= 7.0 é falsa. Logo, o valor retornado é 'R', que será atribuído à variável situacao.
+b) 
+media = (nota1 + nota2) / 2.0;
 
+if (media >= 7.0) {
+    situacao = 'A';
+} else {
+    situacao = 'R';
+}
+c) Não, o operador ternário não pode substituir integralmente qualquer estrutura if-else.
+Limitações:
+ - O operador ternário é projetado para retornar uma única expressão (valor).
+ - Ele não suporta a execução direta de blocos com múltiplos comandos ou instruções compostas em seus ramos de verdadeiro/falso (como declarar variáveis, executar laços ou sequências complexas de comandos independentes), a menos que sejam empacotados por meio de funções ou pelo operador vírgula (o que reduz drasticamente a legibilidade e fere boas práticas de programação).
